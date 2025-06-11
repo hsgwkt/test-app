@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main # またはあなたのメインブランチ名
-  pull_request:
-    branches:
-      - main # またはあなたのメインブランチ名
 
 jobs:
   deploy:
@@ -28,7 +25,7 @@ jobs:
           node-version: '20' # LTS版Node.jsを推奨
 
       - name: Install dependencies
-        run: npm install --force # --force はサブタスクでの問題を回避するため一時的に使用する場合がありますが、通常は不要です
+        run: npm ci
 
       - name: Run checks
         run: npm run check
