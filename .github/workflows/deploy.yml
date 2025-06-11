@@ -31,7 +31,7 @@ jobs:
         run: npm run check
 
       - name: Build project
-        run: VITE_BASE_PATH=/test-app/ npm run build
+        run: VITE_BASE_PATH=/${{ github.event.repository.name }}/ npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
