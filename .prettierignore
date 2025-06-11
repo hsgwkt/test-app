@@ -1,0 +1,15 @@
+# Build output
+dist
+
+# Dependencies
+node_modules
+
+# Lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Vite specific
+.vite/
+# Coverage reports
+coverage/
