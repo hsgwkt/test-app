@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main # またはあなたのメインブランチ名
-  pull_request:
-    branches:
-      - main # またはあなたのメインブランチ名
 
 jobs:
   deploy:
